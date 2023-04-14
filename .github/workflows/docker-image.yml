@@ -10,6 +10,8 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -23,8 +25,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Build and push
-        uses: docker/build-push-action@v4
-        with:
-          push: true
-          tags: jockerdragon/mobaxterm-crack:$(date +%s)
+        name: Build and Push
+        run: |
+          DATE=$(date +%Y%m%d)
+          docker build --tag jockerdragon/mobaxterm-crack:$DATE .
+          docker push jockerdragon/mobaxterm-crack:$DATE
+
