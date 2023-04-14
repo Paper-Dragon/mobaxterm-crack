@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: jockerdragon/mobaxterm-crack:$(date +%s)
+          tags: jockerdragon/mobaxterm-crack:`date +%s`
