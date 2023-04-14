@@ -5,6 +5,8 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+env:
+  DAY_OF_WEEK: Monday
 
 jobs:
   docker:
@@ -24,7 +26,6 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Build and push
-        uses: docker/build-push-action@v4
-        with:
-          push: true
-          tags: jockerdragon/mobaxterm-crack:`date +%s`
+        run: |
+          DATE=$(date +%Y%m%d)
+          docker build --push --tag jockerdragon/mobaxterm-crack:$DATE .
