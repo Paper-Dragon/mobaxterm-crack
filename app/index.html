@@ -39,8 +39,11 @@
 
                             <div class="pure-control-group pure-u-1">
                                 <label for="userName">用户名：</label>
-                                <my-input :idattr="'userName'" :validation="'^[a-zA-Z]+$'" :valueattr="userName"
+                                <!-- <my-input :idattr="'userName'" :validation="'^[a-zA-Z]+$'" :valueattr="userName"
                                     :validationtips="'只能使用字母'" :placeholderattr="'示例 defaultUser'"
+                                    @set-data="setUserName">
+                                </my-input> -->
+                                <my-input :idattr="'userName'" :valueattr="userName"
                                     @set-data="setUserName">
                                 </my-input>
                             </div>
