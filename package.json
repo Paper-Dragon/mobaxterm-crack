@@ -8,14 +8,15 @@
     "build": "vuepress-vite build app",
     "clean-dev": "vuepress-vite dev app --clean-cache",
     "dev": "vuepress-vite dev app",
-    "update-package": "pnpm dlx vp-update"
+    "update-package": "pnpm dlx vp-update",
+    "prod": "pnpm run build && cd app/.vuepress/dist && python -m http.server 8000"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.24",
     "sass-embedded": "^1.89.2",
     "vue": "^3.5.17",
     "vuepress": "2.0.0-rc.24",
-    "vuepress-plugin-mobaxterm-cracker": "1.0.0",
+    "vuepress-plugin-mobaxterm-cracker": "file:./vuepress-plugin-mobaxterm-cracker",
     "@vuepress/theme-default": "2.0.0-rc.112"
   },
   "pnpm": {

@@ -1,0 +1,3 @@
+[submodule "vuepress-plugin-mobaxterm-cracker"]
+	path = vuepress-plugin-mobaxterm-cracker
+	url = https://github.com/Paper-Dragon/vuepress-plugin-mobaxterm-cracker.git

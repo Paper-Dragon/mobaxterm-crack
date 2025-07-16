@@ -24,8 +24,8 @@ importers:
         specifier: 2.0.0-rc.24
         version: 2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2)(sass@1.89.2))(vue@3.5.17)
       vuepress-plugin-mobaxterm-cracker:
-        specifier: 1.0.0
-        version: 1.0.0(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2)(sass@1.89.2))(vue@3.5.17))
+        specifier: file:./vuepress-plugin-mobaxterm-cracker
+        version: file:vuepress-plugin-mobaxterm-cracker(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2)(sass@1.89.2))(vue@3.5.17))
 
 packages:
 
@@ -1567,8 +1567,8 @@ packages:
       typescript:
         optional: true
 
-  vuepress-plugin-mobaxterm-cracker@1.0.0:
-    resolution: {integrity: sha512-mJ1mOkbO74ByxD4ymOileldC2hw2RA0Ldovd7TxqZrcM59KHM7r3A0wMXXYdYVXXGdQM/qk+pKGQU11ny/Gm7Q==}
+  vuepress-plugin-mobaxterm-cracker@file:vuepress-plugin-mobaxterm-cracker:
+    resolution: {directory: vuepress-plugin-mobaxterm-cracker, type: directory}
 
   vuepress@2.0.0-rc.24:
     resolution: {integrity: sha512-56O9fAj3Fr1ezngeHDGyp5I1fWxBnP6gaGerjYjPNtr2RteSZtnqL/fQDzmiw5rFpuMVlfOTXESvQjQUlio8PQ==}
@@ -3207,7 +3207,7 @@ snapshots:
       '@vue/server-renderer': 3.5.17(vue@3.5.17)
       '@vue/shared': 3.5.17
 
-  vuepress-plugin-mobaxterm-cracker@1.0.0(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2)(sass@1.89.2))(vue@3.5.17)):
+  vuepress-plugin-mobaxterm-cracker@file:vuepress-plugin-mobaxterm-cracker(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2)(sass@1.89.2))(vue@3.5.17)):
     dependencies:
       '@vuepress/client': 2.0.0-rc.24
       '@vuepress/helper': 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2)(sass@1.89.2))(vue@3.5.17))
