@@ -39,5 +39,7 @@ jobs:
       - name: Build and Push
         run: |
           DATE=$(date +%Y%m%d)
-          docker build --tag jockerdragon/mobaxterm-crack:$DATE .
-          docker push jockerdragon/mobaxterm-crack:$DATE
+          SHORT_SHA=$(git rev-parse --short HEAD)
+          docker build --tag jockerdragon/mobaxterm-crack:$DATE-$SHORT_SHA --tag jockerdragon/mobaxterm-crack:latest .
+          docker push jockerdragon/mobaxterm-crack:$DATE-$SHORT_SHA
+          docker push jockerdragon/mobaxterm-crack:latest
