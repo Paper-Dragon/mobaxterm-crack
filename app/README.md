@@ -5,7 +5,7 @@ heroText: vuepress-plugin-mobaxterm-cracker
 tagline: 一个为 VuePress 2 设计的 MobaXterm 许可证生成器插件
 actions:
   - text: 查看源码
-    link: https://github.com/jocker-dragon/mobaxterm-crack
+    link: https://github.com/Paper-Dragon/mobaxterm-crack
     type: primary
   - text: 查看NPM包
     link: https://www.npmjs.com/package/vuepress-plugin-mobaxterm-cracker
